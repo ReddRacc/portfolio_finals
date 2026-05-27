@@ -1,0 +1,439 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+  font-family: "Indie Flower", cursive;
+
+  background-image: url(background_photo.jpg);
+  background-size: cover;
+}
+
+/*Navigation Part*/
+
+ nav {
+  position: sticky;  
+  top: 0;            
+  left: 0;
+  width: 100%;
+  
+  background-color: #EEFFEF;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 15px 0;
+  z-index: 1000;
+  border: 2px solid #6b9b6c;
+ }
+
+ .sectionTitle {
+  text-align: center;
+  font-size: 5vw;
+ }
+
+ .sectionSubtitle {
+  text-align: center;
+  font-size: 2vw;
+ }
+
+ .titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-align: center;
+ }
+
+ .scrollButton {
+  display: inline-block;
+  padding: 12px 35px;
+  background-color: #FCD3D7;
+  color: #333333;
+  text-decoration: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 32px;
+  
+  border: 1px solid #EAAAB1;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  
+  margin-top: 20px;
+  transition: all 0.2s ease;
+ }
+
+ .navButton {
+  display: inline-block;
+  padding: 10px;
+
+  background-color: #EEFFEF;
+  color: #000000;
+  text-decoration: none;
+
+  border-radius: 5px;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+
+  transition: background-color 0.3s ease;
+ }
+
+ .navButton:hover{
+  background-color: #bce6bd;
+  cursor: pointer;
+ }
+
+ .indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*1st Page Logo Picture*/
+ .titleImage {
+  width: 700px;
+  height: 400px;
+  padding: 50px;
+ }
+
+ /*About Me Div*/
+#aboutMe {
+  background-color: #FFFFFF;
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  border: 2px solid #6b9b6c;
+  overflow-y: auto;
+}
+
+.profileRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.belowAboutMe {
+  width: 100%;
+  border-top: 1px solid #eeeeee;
+  text-align: left;
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+#nameAboutMe {
+  font-family: "Indie Flower", cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+#aboutMePicture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#projects {
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*trying Carousel Image thingy*/
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  border: 2px solid #6b9b6c;
+}
+
+.carouselTrack {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  gap: 20px;
+}
+
+.carouselSlide {
+  width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.carouselThumbnail {
+  width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.carouselTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.carouselBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 1);
+}
+
+.carouselBtn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/*Achievements Section*/
+.achievementsSection {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: 780px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  position: relative;
+  border: 2px solid #6b9b6c;
+}
+
+.achievementBar {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  width: 780px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+
+  opacity: 0;
+  display: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease-in-out;
+
+  overflow: hidden;
+}
+
+/*try lang small to big*/
+
+#achievement1A, #achievement2A, #achievement3A {
+  height: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#achievement1A.active, #achievement2A.active, #achievement3A.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#achievement1B, #achievement2B, #achievement3B {
+  display: flex;
+  flex-direction: column;
+}
+
+.expanded {
+  max-height: 0px;
+  opacity: 0;
+  padding: 0px 5px;
+  border: none;
+}
+
+.expanded.active {
+  max-height: 400px;
+  opacity: 1;
+  padding: 15px 5px;
+  border: 1px solid #000000;
+  overflow-y: auto;
+}
+
+.achievementBar:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  background-color: #EEFFEF;
+  transform: translateY(-2px);
+}
+
+.achievementBar.active {
+  opacity: 1;
+  display: flex;
+  transform: translateY(0);
+}
+
+.achievementLogo {
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+/*Contacts Section*/
+
+.contacts {
+  background-color: #FFFFFF;
+  width: 800px;
+  height: 450px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  border: 2px solid #6b9b6c;
+}
+
+.rawContacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #eeeeee;
+}
+
+.youtubeLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+  gap:10px;
+  width: 100%;
+}
+
+#youtubeLogo {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+#youtubeLogo:hover {
+  filter: brightness(50%);
+}
+
+#youtubeText {
+  margin: 0;
+  padding: 0;
+}
+
+.tiktokLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap:20px;
+  width: 100%;
+}
+
+#tiktokLogo {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+#tiktokLogo:hover {
+  filter: brightness(50%);
+}
+
+#tiktokText {
+  margin: 0;
+  padding: 0;
+}
+
+/*Footer*/
+
+#footer {
+  margin-top: 100px;
+  max-width: 100%;
+  height: auto;
+  background-color: #bce6bd;
+}
+
+#footerLeft {
+  padding: 20px;
+  margin-left: 55px;
+}
+
+#footerLogo, #invisDiv {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+#footerMiddle {
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#footerRight {
+  padding: 20px;
+  margin-right: 55px;
+  text-align: right;
+}
+
+.upperFooter {
+  display: flex;
+  flex-direction: row;
+  border-top: 5px solid #eeeeee;
+}
+
+#bottomFooter {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prevBtn { left: 16px; } 
+.nextBtn { right: 16px; } 
