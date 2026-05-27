@@ -1,0 +1,205 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="css/style.css">
+            <title>My Portfolio</title>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatis.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <!--This is the Navigation Bar-->
+            <nav>
+                <a class="navButton" href="#home">Home</a>
+                <a class="navButton" href="#scroll_aboutMe">About Me</a>
+                <a class="navButton" href="#scroll_projects">Projects</a>
+                <a class="navButton" href="#scroll_achievements">Achievements</a>
+                <a class="navButton" href="#scroll_contact">Contact</a>
+            </nav>
+
+            <!--This is the Logo and the Photo in the main page-->
+            <div class="titleContainer" id="home">
+                <img src="images/portfolio_title_logo.png" alt="Portfolio Title" class="titleImage">
+                <a class="scrollButton" href="#scroll_aboutMe" class="scroll-btn">Scroll</a>
+            </div>
+
+            <!--The About Me Section-->
+
+            <h1 class="sectionTitle" id="scroll_aboutMe">About Me</h1>
+
+            <div id="aboutMe">
+                <div class="profileRow">
+                    <img src="images/elijah_picture.jpg" alt="Elijah's Picture" id="aboutMePicture">
+
+                    <div class="aboutMeText">
+                        <h1 id="nameAboutMe">Name: Elijah Laurence Lansangan</h1>
+                        <p style="font-size: 25px;">Age: 19</p>
+                    </div>
+                </div>
+
+                <div class="belowAboutMe">
+
+                    <p style="font-size: 30px;">Skills:</p>
+                    <ul style="font-size: 30px;">
+                        <li>Coding - Drawing - Math - Graphic Design</li>
+                    </ul>
+                    <p style="font-size: 30px; padding: 20px; border-top: 1px solid #eeeeee;">More about me:</p>
+                    <p>Hello! I am Elijah, I am quick to learn, hardworking, persistent, and consistent with the qualities of my work.</p>
+                    <p>I am currently studying for Bachelors of Science in Information Technology, specializing in Web and Mobile Development via National University Clark.</p>
+                    <p>I'll be looking forward to be working with you someday!.</p>
+
+                    
+                </div>
+            </div>
+            <!--The Projects Section-->
+
+            <h1 class="sectionTitle" id="scroll_projects">Projects</h1>
+            <p class="sectionSubtitle">click the image for the details</p>
+            
+            <div id="projects" class="carouselContainer">
+                <div class="carouselTrack">
+                    <a href="activities/Activity1.html" class="carouselSlide">
+                        <img src="images/activity1_png.png" alt="Project 1 image" class="carouselThumbnail">
+                        <p class="carouselTitle">Activity 1</p>
+                    </a>
+                    <a href="activities/Activity2.html" class="carouselSlide">
+                        <img src="images/activtiy2_png.png" alt="Project 2 image" class="carouselThumbnail">
+                        <p class="carouselTitle">Activity 2</p>
+                    </a>
+                    <a href="activities/Activity3.html" class="carouselSlide">
+                        <img src="images/activity3_png.png" alt="Project 3 image" class="carouselThumbnail">
+                        <p class="carouselTitle">Activity 3</p>
+                    </a>
+                    <a href="https://www.figma.com/site/Cql6KugjHw15yZ19sZr1Iu/Chriszian-Ryan-Portfolio-?node-id=0-4&t=ILd9l9N36ocJZvC9-1" class="carouselSlide">
+                        <img src="images/activity4_png.jpg" alt="Project 4 image" class="carouselThumbnail">
+                        <p class="carouselTitle">Activity 4 (Client)</p>
+                    </a>
+                </div>
+
+                <button class="carouselBtn prevBtn" aria-label="Previous Slide">&#10094;</button>
+                <button class="carouselBtn nextBtn" aria-label="Mext Slide">&#10095;</button>
+            </div>
+
+            <!--The Achivements Section-->
+            <h1 class="sectionTitle" id="scroll_achievements">Achievements</h1>
+            <div class="achievementsSection">
+
+                
+
+                <!-- original achievement section -->
+                <div class="achievementBar active" id="achievement1A" onClick="swapAchievement()" role="button" tabindex="0">
+                    <img src="images/Microsoft_Logo.png" alt="Microsoft Excel" style="margin-left: 20px; padding: 5px;">
+                    <p style="margin-left: 10px;">Microsoft Excel Certificate<br>
+                    Completed: 10/8/2025</p>
+                </div>
+                <div class="achievementBar expanded" id="achievement1B" onclick="swapAchievement()" role="button" tabindex="0">
+                    <img src="images/Microsoft_Logo.png" alt="Microsoft Excel Logo" class="achievementLogo">
+                    <h1 style="margin-left: auto; margin-right: auto; margin-top: 15px;">Microsoft Excel</h1>
+                    <p style="margin-left: auto; margin-right: auto; margin-top: 15px; text-align: center;">
+                        I have completed the Excel Certification via Certiport on <br>
+                        10/8/2025 with the score of 760.
+                    </p>
+                </div>
+
+                <div class="achievementBar active" id="achievement2A" onclick="swapAchievement2()" role="button" tabindex="0">
+                    <img src="images/HTML_CSS_Logo.png" alt="HTML and CSS" style="margin-left: 20px; padding: 5px;">
+                    <p style="margin-left: 10px;">ITS: HTML and CSS Certificate<br>
+                    Completed: 5/15/2026</p>
+                </div>
+                <div class="achievementBar expanded" id="achievement2B" onclick="swapAchievement2()" role="button" tabindex="0">
+                    <img src="images/HTML_CSS_Logo.png" alt="HTML and CSS Logo" class="achievementLogo">
+                    <h1 style="margin-left: auto; margin-right: auto; margin-top: 15px;">ITS: HTML and CSS</h1>
+                    <p style="margin-left: auto; margin-right: auto; margin-top: 15px; text-align: center;">
+                        I have completed the ITS: HTML and CSS via Certiport on <br>
+                        5/15/2026 with the score of 965.
+                    </p>
+                </div>
+
+                <div class="achievementBar active" id="achievement3A" onclick="swapAchievement3()" role="button" tabindex="0">
+                    <img src="images/Database_Logo.png" alt="Databases Logo" style="margin-left: 20px; padding: 5px;">
+                    <p style="margin-left: 10px;">ITS: Databases Certificate<br>
+                    Completed: 5/15/2026</p>
+                </div>
+                <div class="achievementBar expanded" id="achievement3B" onclick="swapAchievement3()" role="button" tabindex="0">
+                    <img src="images/Database_Logo.png" alt="Databases Logo" class="achievementLogo">
+                    <h1 style="margin-left: auto; margin-right: auto; margin-top: 15px;">ITS: Databases</h1>
+                    <p style="margin-left: auto; margin-right: auto; margin-top: 15px; text-align: center;">
+                        I have completed the ITS: HTML and CSS via Certiport on <br>
+                        5/15/2026 with the score of 965.
+                    </p>
+                </div>
+            </div>
+
+            <!--The Contacts div Section-->
+            <h1 class="sectionTitle" id="scroll_contact">Contacts and Socials</h1>
+
+            <div class="contacts">
+
+                <!--The Raw Contacts Section-->
+                <div class="rawContacts">
+                    <h2>Email: elijahlaurencelansangan@gmail.com</h2>
+                    <h2>Phone: +639629018752</h2>
+                    <h2>School Email: lansanganep@students.nu-clark.edu.ph</h2>
+                </div>
+
+                <!--The Image Links section-->
+                <div class="socials">
+                    <div class="youtubeLink">
+                        <div>
+                            <a href="https://youtube.com/@reddtoast?si=yUhB47F3--7S6f0M">
+                                <img src="images/youtubeLogo.png" alt="Youtube" id="youtubeLogo">
+                            </a>
+                        </div>
+                        <h1 id="youtubeText">Youtube</h1>
+                    </div>
+
+                    <div class="tiktokLink">
+                        <div>
+                            <a href="https://tiktok.com/@keitarosimpp?_r=1&_t=ZS-96iKSWvczBM">
+                                <img src="images/tiktokLogo.png" alt="Tiktok" id="tiktokLogo">
+                            </a>
+                        </div>
+                        <h1 id="tiktokText">TikTok</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!--The Footer Section-->
+
+            <div id="footer">
+                <div class="upperFooter">
+                    <img src="images/footerLogo.png" alt="ReddRacc Logo" id="footerLogo">
+                    <div id="footerLeft">
+                        <p>Made By: Elijah Laurence Pasamonter <br>
+                            Lansangan</p>
+                        <p>Used   : Visual Studio Code</p>
+                    </div>
+                    <div id="footerMiddle">
+                        <a href="#home">Home</a>
+                        <a href="#scroll_aboutMe">About Me</a>
+                        <a href="#scroll_projects">Projects</a>
+                        <a href="#scroll_achievements">Acievements</a>
+                        <a href="#scroll_contacts">Contacts</a>
+                    </div>
+                    <div id="footerRight">
+                        <p>Project Name: Web Systems and <br>
+                        Technologies Final Exam Project</p>
+                        <p>To be passed before: June 02, 2026</p>
+                    </div>
+                    <div id="invisDiv">
+                    </div>
+                </div>
+
+                <div id="bottomFooter">
+                    <p>This is a Portfolio Website</p>
+                    <p>Thank you!</p>
+                    <p>- ReddRacc/Elijah</p>
+                </div>
+            </div>
+            
+            <script src="javascript/script.js"></script>
+        </body>
+    </html>
+</DOCTYPE>
